@@ -1,0 +1,3 @@
+add-root-variable.patch
+fix-for-coffescript.diff
+adapt-gruntfile.patch
