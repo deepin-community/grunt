@@ -8,37 +8,35 @@ Uploaders:
 Section: javascript
 Priority: optional
 Build-Depends:
- coffeescript (>= 1.10.0~)
- , debhelper-compat (= 13)
- , pkg-js-tools (>= 0.9.20~)
-Standards-Version: 4.5.0
+ debhelper-compat (= 13)
+ , dh-sequence-nodejs
+Standards-Version: 4.6.1
 Vcs-Browser: https://salsa.debian.org/js-team/grunt
 Vcs-Git: https://salsa.debian.org/js-team/grunt.git
 Homepage: https://gruntjs.com/
+Testsuite: autopkgtest-pkg-nodejs
 Rules-Requires-Root: no
 
 Package: grunt
 Architecture: all
 Depends:
  ${misc:Depends}
- , coffeescript (>= 1.10.0~)
  , node-dateformat
  , node-eventemitter2
  , node-exit
- , node-findup-sync (>= 0.3.0)
+ , node-findup-sync
  , node-glob
- , node-grunt-cli
+ , node-grunt-cli (>= 1.4.1~)
  , node-grunt-known-options
  , node-grunt-legacy-log
  , node-grunt-legacy-util
  , node-iconv-lite
  , node-js-yaml
- , node-minimatch (>= 3.0.0)
+ , node-minimatch
  , node-mkdirp
- , node-nopt (>= 3.0.6)
- , node-path-is-absolute
+ , node-nopt
  , node-rimraf
- , nodejs (>= 6.11~)
+ , nodejs:any
 Provides:
  node-grunt
 Description: JavaScript task runner/build system/maintainer tool
