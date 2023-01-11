@@ -5,3 +5,4 @@ Bug-Submit: https://github.com/gruntjs/grunt/issues/new
 Changelog: https://github.com/gruntjs/grunt/tags
 Repository: https://github.com/gruntjs/grunt.git
 Repository-Browse: https://github.com/gruntjs/grunt
+Security-Contact: https://github.com/gruntjs/grunt/tree/HEAD/SECURITY.md
